@@ -1,0 +1,1687 @@
+{
+	"info": {
+		"_postman_id": "8d3697da-9326-4501-a9b7-0646e488cd8a",
+		"name": "E-Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26829558"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "addCategory",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjA5Nzc1OGIzZTEyNTZiOWQxODM1MDMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTg5NjQyNH0.n6sbCUqR-QMKBZoAI9O08nQCyexWFLUfGpLxgJRcIvc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "furniture",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/furniture.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/categories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all categories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/categories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get specific category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/categories/65e8deac6ad5cbf53cc604d8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"65e8deac6ad5cbf53cc604d8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/categories/65e8d5e5e339299f40579d9e",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"65e8d5e5e339299f40579d9e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "luxury",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/luxury.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/categories/65ec3b3f56dd418f313fe591",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"65ec3b3f56dd418f313fe591"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "addBrands",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Inteldd",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/Brans/amazon .jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/brands",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all brands",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/brands",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get specific brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/brands/65ec65890fa1882bd3ae0bb5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brands",
+								"65ec65890fa1882bd3ae0bb5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBrand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/brands/65ec65890fa1882bd3ae0bb5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brands",
+								"65ec65890fa1882bd3ae0bb5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update brand",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Amazon service",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/Brans/amazon .jpeg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/brands/65ec659d0fa1882bd3ae0bb8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brands",
+								"65ec659d0fa1882bd3ae0bb8"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "soooony",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subCategory",
+			"item": [
+				{
+					"name": "addSubCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ctro\",\r\n    \"Category\" :\"66097905b3e1256b9d183509\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/subCategories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"subCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllSubCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/subCategories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"subCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSingleSubCateogry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/subCategories/65ec51e6801279bd9e667710",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"subCategories",
+								"65ec51e6801279bd9e667710"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateSubCateogry",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"books\",\r\n    \"Categoryid\" :\"65ec3b3f56dd418f313fe591\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/subCategories/65ec51e6801279bd9e667710",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"subCategories",
+								"65ec51e6801279bd9e667710"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSubCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/subCategories/65ec51e6801279bd9e667710",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"subCategories",
+								"65ec51e6801279bd9e667710"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "add Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjA5Nzc1OGIzZTEyNTZiOWQxODM1MDMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTg5NjQyNH0.n6sbCUqR-QMKBZoAI9O08nQCyexWFLUfGpLxgJRcIvc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "mansion",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "a classy house for rich people",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "66097905b3e1256b9d183509",
+									"type": "text"
+								},
+								{
+									"key": "subCategory",
+									"value": "6609797db3e1256b9d18350b",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "66097b541bb177fcf7c6d541",
+									"type": "text"
+								},
+								{
+									"key": "imgCover",
+									"type": "file",
+									"src": "/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/Product/iphone 13 pro max/imgCover.jpeg"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/Product/iphone 13 pro max/1.jpeg",
+										"/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/Product/iphone 13 pro max/2.jpeg",
+										"/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/Product/iphone 13 pro max/3.jpeg",
+										"/D:/Route/BackEnd/Implementaion + assignments + soluations + Exam/Week 8/E-Commerce/images/Product/iphone 13 pro max/4.jpeg"
+									]
+								},
+								{
+									"key": "priceAfterDiscount",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get all users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ahmed\",\r\n    \"email\":\"ahemdhemlyy212@gmail.com\",\r\n    \"password\":\"Ahmed#123\",\r\n    \"rePassword\":\"Ahmed#123\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Single user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/users/65f477a4fb812ea905f83809",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"65f477a4fb812ea905f83809"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/users/65f479346da90f6ffeb1b16e",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"65f479346da90f6ffeb1b16e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "sign up user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ahmed\",\r\n    \"email\":\"newuser2121@yahoo.com\",\r\n    \"password\":\"Ahmed1111\",\r\n    \"rePassword\":\"Ahmed1111\",\r\n    \"age\":20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/authentication/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authentication",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign - in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"newuser2121@yahoo.com\",\r\n    \"password\":\"Ahmed1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/authentication/signin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authentication",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDg3ODE3NX0.ctzEGLElKaZGk-JU1wgAhLdT9DZgrshhHtKi5YtYe1E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"Ahmed123ahmed\",\r\n    \"newPassword\":\"Ahmed1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/authentication/changePassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"authentication",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "add review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"good product with high quality\",\r\n    \"product\":\"65ef51359d646d487d774b6f\",\r\n    \"rate\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/reviews",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update review",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"this is product's review\",\r\n    \"rate\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/reviews/65fb412c6aee2cf2c601214b",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"65fb412c6aee2cf2c601214b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete review",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/reviews/65fb3502dac603c560b10ecf",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"65fb3502dac603c560b10ecf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/reviews",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/reviews/65fb315ac51fbef44bddda7f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"65fb315ac51fbef44bddda7f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WishList",
+			"item": [
+				{
+					"name": "add product to wishlist",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":\"65ef51359d646d487d774b6f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/wishList",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"wishList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete from wish list",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/wishList/65ef51359d646d487d774b6f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"wishList",
+								"65ef51359d646d487d774b6f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get logged user wishlist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/wishList",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"wishList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user addresses",
+			"item": [
+				{
+					"name": "add address",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"street\": \"rod el farg\",\r\n  \"phone\": \"01234567891\",\r\n  \"city\": \"cairo\",\r\n  \"country\": \"egypt\",\r\n  \"zipcode\": \"91520\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/addresses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove address",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/addresses/65fee364e04ab122c1b8a350",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"addresses",
+								"65fee364e04ab122c1b8a350"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get logged user address",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY3MWFhODZmZDZmMTcwYmVhZjZkYjQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDk2MDY1OX0.btnrJH8Z8_3kar-gAvwR_G7El6dtTcIBt0N7BFdMrfM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/addresses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coupons",
+			"item": [
+				{
+					"name": "add coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWYwZmFhYjc2OWQ4N2RhOWUwNTkiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTEyMDYyNzB9.cnM7Dgtu1_7yeYxvgmfW3I1d2mKN6orMvvzE59ORWys",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"code2\",\r\n    \"expires\":\"3/30/2024\",\r\n    \"discount\":\"100\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/coupons",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"coupons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get all coupons",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWYwZmFhYjc2OWQ4N2RhOWUwNTkiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTEyMDYyNzB9.cnM7Dgtu1_7yeYxvgmfW3I1d2mKN6orMvvzE59ORWys",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/coupons",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"coupons"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "get logged user cart",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjA5OWRmNTk1YmQ3YmJjOWExNmFlMjgiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTkwNjMxM30.kDUXPsUipWMOI-rdGIuaexAAK9gC0-M5vQIVyW3oG_g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/carts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add product to cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjA5OWRmNTk1YmQ3YmJjOWExNmFlMjgiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTkwNjMxM30.kDUXPsUipWMOI-rdGIuaexAAK9gC0-M5vQIVyW3oG_g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":\"66097bdf1bb177fcf7c6d54e\",\r\n    \"quantity\":1 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/carts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove specific from cart",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjAwMzM0YWJhOTc0ODQyMmEzYjVmM2YiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTI4OTE3N30.g8nc-Wd7yBzPJirwIM-p7KX9c3u4VGc1YSYHAah2h_U",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/carts/660041524a4a5728b3a274cc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"carts",
+								"660041524a4a5728b3a274cc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product from cart",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjAwMzM0YWJhOTc0ODQyMmEzYjVmM2YiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTI4OTE3N30.g8nc-Wd7yBzPJirwIM-p7KX9c3u4VGc1YSYHAah2h_U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/carts/6602f4d0687766c15521c1f7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"carts",
+								"6602f4d0687766c15521c1f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clear user cart",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjAzMWRlNDNkNmUwZjVmMzZmNWIyYTgiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTQ4MDMxMH0.Km-_VVqSMRe8tBsItg36ZPkUmQEBH7Q4T4g75rQ4x8g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/carts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apply coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjAzMWRlNDNkNmUwZjVmMzZmNWIyYTgiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTQ4MDMxMH0.Km-_VVqSMRe8tBsItg36ZPkUmQEBH7Q4T4g75rQ4x8g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"coupon\":\"code3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/carts/applyCoupon",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"carts",
+								"applyCoupon"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "create order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjA5OWRmNTk1YmQ3YmJjOWExNmFlMjgiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTkwNjMxM30.kDUXPsUipWMOI-rdGIuaexAAK9gC0-M5vQIVyW3oG_g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/orders/66099e5395bd7bbc9a16ae32",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"66099e5395bd7bbc9a16ae32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create CheckOut Session",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjA5OWRmNTk1YmQ3YmJjOWExNmFlMjgiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTkwNjMxM30.kDUXPsUipWMOI-rdGIuaexAAK9gC0-M5vQIVyW3oG_g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/orders/CheckOut/6623b39c8f59008ccb43301e",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"CheckOut",
+								"6623b39c8f59008ccb43301e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all order(Admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBiMjJkMGQ5MTgxNGM0MDcwMDdkZmMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTIwMDU5MjB9.1fiHMJDYEi8miF9-XmW7ncm5khFu9ymbANKzbv870vw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/orders/allOrders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"allOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get specific order",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjA5OWRmNTk1YmQ3YmJjOWExNmFlMjgiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMTkwNjMxM30.kDUXPsUipWMOI-rdGIuaexAAK9gC0-M5vQIVyW3oG_g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Checkout Session",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
