@@ -6,7 +6,7 @@ import { couponModel } from "../../../DataBases/models/coupon.model.js";
 import { orderModel } from "../../../DataBases/models/order.model.js";
 
 import Stripe from "stripe";
-const stripe = new Stripe("sk_test_51P1B6fCnn0snVGx5FMh11D81CI90VSxvmG21GODxFnNtocLEdmKd2bIdjG1Hifb61WSqiR3sqDOSUQNxNCGK3ATp00ujtBEH1K");
+const stripe = new Stripe(process.env.SECRET_KEY);
 
 export const createCashOrder = errorCatcher(async (req, res, next) => {
   // 1- get cart -> cart_id
